@@ -5,7 +5,7 @@ Once unzipped and open in Visual Studio Code, press Ctrl+Shift+F, and replace `b
 
 In this same Ctrl+Shift+F menu, replace `Brainage's Template` with the name of your datapack (e.g. `Brainage's World Setup`).
 
-Next, in the `pack.mcmeta` file, replace the template description with a brief explanation of what your datapack does (e.g. "Performs world setup commands")
+Next, in the `pack.mcmeta` file, replace the template description (`Datapack Template by Brainage`) with a brief explanation of what your datapack does (e.g. `Performs world setup commands`)
 
 Next, copy the datapack folder (containing `data` and `pack.mcmeta`), navigate to `.minecraft/saves/(your world name)/datapacks` in File Explorer and paste. If the `datapacks` folder does not exist, create it (usually only done if the datapack needs to be loaded before the world generates).
 
