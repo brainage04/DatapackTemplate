@@ -1,10 +1,10 @@
-tellraw @s {"text": "                                                                ","color": "gray","strikethrough": true}
+tellraw @s {"text": "                                ","color": "gray","strikethrough": true}
 tellraw @s {"text": "Brainage's Template | About","color": "gray"}
-tellraw @s {"text": "                                                                ","color": "gray","strikethrough": true}
+tellraw @s {"text": "                                ","color": "gray","strikethrough": true}
 
 tellraw @s {"text": "No about section yet.","color": "gray"}
 
-tellraw @s {"text": "                                                                ","color": "gray","strikethrough": true}
+tellraw @s {"text": "                                ","color": "gray","strikethrough": true}
 
 function brainage_template:sounds/click
 
