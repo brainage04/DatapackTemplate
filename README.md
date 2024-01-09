@@ -1,5 +1,7 @@
 # Setup
-To setup this datapack, open in Visual Studio Code, press Ctrl+Shift+F, and replace `brainage_template` with your namespace (e.g. `brainage_world_setup`). Make sure it's reasonably short but uniquely identifiable, as people will be typing your triggers to use the features in your datapack (also to avoid potentially conflicting namespaces with other datapacks).
+To setup this datapack, please download the .zip from the latest release here: https://github.com/brainage04/DatapackTemplate/releases/latest
+
+Once unzipped and open in Visual Studio Code, press Ctrl+Shift+F, and replace `brainage_template` with your namespace (e.g. `brainage_world_setup`). Make sure it's reasonably short but uniquely identifiable, as people will be typing your triggers to use the features in your datapack (also to avoid potentially conflicting namespaces with other datapacks).
 
 In this same Ctrl+Shift+F menu, replace `Brainage's Template` with the name of your datapack (e.g. `Brainage's World Setup`).
 
