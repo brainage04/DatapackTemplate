@@ -1,9 +1,11 @@
 # Setup
-To setup this datapack, open in Visual Studio Code, press Ctrl+Shift+F, and replace "brainage_template" with your namespace. Make sure it's reasonably short but uniquely identifiable, as people will be typing your triggers to use the features in your datapack (also to avoid potentially conflicting namespaces with other datapacks).
+To setup this datapack, open in Visual Studio Code, press Ctrl+Shift+F, and replace "brainage_template" with your namespace (e.g. "brainage_world_setup"). Make sure it's reasonably short but uniquely identifiable, as people will be typing your triggers to use the features in your datapack (also to avoid potentially conflicting namespaces with other datapacks).
 
-After this, copy the datapack folder (containing data and pack.mcmeta), navigate to .minecraft/saves/(your world name)/datapacks in File Explorer and paste. If these folders do not exist, create them.
+In this same Ctrl+Shift+F menu, replace "Brainage's Template" with the name of your datapack (e.g. "Brainage's World Setup").
 
-Once the datapack is in your world's datapacks folder, type "/reload" in the chat or server console (if applicable). If you cannot do this, ask an operator of the world or server to do so. This will load the datapack and install it upon loading for the first time.
+Next, copy the datapack folder (containing data and pack.mcmeta), navigate to .minecraft/saves/(your world name)/datapacks in File Explorer and paste. If the "datapacks" folder does not exist, create it (usually only done if the datapack needs to be loaded before the world generates).
+
+Once the datapack is in your world's "datapacks" folder, type "/reload" in the chat or server console (if applicable). If you cannot do this, ask an operator of the world or server to do so. This will load the datapack and install it upon loading for the first time.
 
 # Features
 This datapack has a few useful features to assist in making the user experience as friendly as possible. There are about and config triggers which let players view the about sections and config sections of the datapack.
