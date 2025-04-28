@@ -1,4 +1,4 @@
-tellraw @a [{"text":"Brainage's Template (1.21) ","color": "green"},{"text": "installed.","color": "green"}]
+tellraw @a [{"text":"Brainage's Template ","color": "green"},{"text": "installed.","color": "green"}]
 
 function brainage_template:sounds/click
 
