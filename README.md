@@ -1,11 +1,11 @@
 # Setup
-To setup this datapack, please download the .zip from the latest release here: https://github.com/brainage04/DatapackTemplate/releases/latest
+To setup this datapack, click the `Download ZIP` button that appears after clicking the `<> Code` button.
 
 Once unzipped and open in Visual Studio Code, press Ctrl+Shift+F, and replace `brainage_template` with your namespace (e.g. `brainage_world_setup`). Make sure it's reasonably short but uniquely identifiable, as people will be typing your triggers to use the features in your datapack (also to avoid potentially conflicting namespaces with other datapacks).
 
 In this same Ctrl+Shift+F menu, replace `Brainage's Template` with the name of your datapack (e.g. `Brainage's World Setup`).
 
-Next, in the `pack.mcmeta` file, replace the template description (`Datapack Template by Brainage`) with a brief explanation of what your datapack does (e.g. `Performs world setup commands`)
+Next, in the `pack.mcmeta` file, replace the template description (`Datapack Template by Brainage`) with a brief explanation of what your datapack does (e.g. `Performs world setup commands`). You may also optionally add a thumbnail to the datapack by adding an image to the root folder with the name `pack.png`.
 
 Next, copy the datapack folder (containing `data` and `pack.mcmeta`), navigate to `.minecraft/saves/(your world name)/datapacks` in File Explorer and paste. If the `datapacks` folder does not exist, create it (usually only done if the datapack needs to be loaded before the world generates).
 
@@ -21,5 +21,3 @@ The config trigger allows operators to install and uninstall the datapack if cha
 This datapack also performs an action when a player joins the world for their first time. This can be used to do things such as assigning them to a team or giving them items to start their playthrough.
 
 There is also a 1 second loop where you can put your more computationally-expensive commands, such as NBT data queries or uses of `/execute`.
-
-Have fun!
