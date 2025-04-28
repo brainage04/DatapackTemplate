@@ -1,5 +1,5 @@
 # Setup
-To setup this datapack, click the `Download ZIP` button that appears after clicking the `<> Code` button.
+To setup this datapack, you can click `Use this template`, fork this repository or click the `Download ZIP` button that appears after clicking the `<> Code` button.
 
 Once unzipped and open in Visual Studio Code, press Ctrl+Shift+F, and replace `brainage_template` with your namespace (e.g. `brainage_world_setup`). Make sure it's reasonably short but uniquely identifiable, as people will be typing your triggers to use the features in your datapack (also to avoid potentially conflicting namespaces with other datapacks).
 
