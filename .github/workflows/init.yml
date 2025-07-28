@@ -1,0 +1,36 @@
+name: Initialize Template Repo
+on:
+  - push
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    name: "Initialize template repository"
+    runs-on: ubuntu-latest
+    if: github.event.repository.name != 'DatapackTemplate'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.1
+      - name: Initialize Repo
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          owner=$(echo $GITHUB_REPOSITORY | cut -d/ -f1)
+          datapack_name=$(echo $GITHUB_REPOSITORY | cut -d/ -f2 | tr -d "-" | tr -d ".")
+          ./init.sh "$owner" "$datapack_name"
+          
+          git add .
+          git commit -F- <<EOF
+          Initialize template repository
+          
+          Set owner to $owner
+          Set datapack name to $datapack_name
+          EOF
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.8.0
+        with:
+          branch: ${{ github.ref }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
