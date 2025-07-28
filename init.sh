@@ -36,7 +36,7 @@ echo "Setting datapack id to $datapack_id"
 
   # refactor pack.mcmeta
   sed -i \
-      -e "s/Datapack Template by Brainage/$datapack_name by $owner/g" "$base/pack.mcmeta"
+      -e "s/Brainage's Template Datapack/$datapack_name Datapack/g" "$base/pack.mcmeta"
 
   # lastly, refactor data directory
   mv "$base"/data/brainage_template "$base"/data/"$datapack_id"
