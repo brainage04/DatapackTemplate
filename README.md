@@ -1,17 +1,16 @@
-# Setup
-To setup this datapack, you can click `Use this template`, fork this repository or click the `Download ZIP` button that appears after clicking the `<> Code` button.
+# About
+My template for Minecraft datapacks. The easiest way to use this is to click `Use this template` and GitHub Actions will take care of the rest for you.
 
-Once unzipped and open in Visual Studio Code, press Ctrl+Shift+H, and replace `brainage_template` with your namespace (e.g. `brainage_world_setup`) and replace `Brainage's Template` with the name of your datapack (e.g. `Brainage's World Setup`). Make sure it's reasonably short but uniquely identifiable, as people will be typing your triggers to use the features in your datapack (also to avoid potentially conflicting namespaces with other datapacks).
+However, if you are using a Linux-based operating system, it is possible to clone this repository, and perform a refactor by triggering the `init.sh` script like so:
+```shell
+./init.sh <owner> <datapack_name> 
+```
 
-Be sure to also rename the `brainage_template` folder to what you replaced the `brainage_template` occurences in files with (e.g. `brainage_world_setup`)
+Where `<owner>` is your GitHub username and `<datapack_name>` is your GitHub repository name/datapack name.
 
-Next, in the `pack.mcmeta` file, replace the template description (`Datapack Template by Brainage`) with a brief explanation of what your datapack does (e.g. `Performs world setup commands`). You may also optionally add a thumbnail to the datapack by adding an image to the root folder with the name `pack.png`.
-
-Next, copy the datapack folder (containing `data`, `README.md` and `pack.mcmeta`), navigate to your world file (usually `.minecraft/saves/(your world name)`) in File Explorer, create the `datapacks` folder if it does not exist, and paste the datapack in the `datapacks` folder.
-
-Once the datapack is in your world's `datapacks` folder, execute the `/reload` command to load the datapack.
-
-If your datapack adds certain features such as dimensions, structures, features or changes to world generation, `/reload` will have no effect. You will need to restart the server to see these changes.
+This script is designed to work both with GitHub Actions and manual usage, and will safely delete:
+  - Leftover unused folders that are not tracked by Git (src/main/java/com/example and src/main/resources/examplemod).
+  - The .github folder and script file after successful execution.
 
 # Features
 This datapack has a few useful features to assist in making the user experience as friendly as possible. There are about and config triggers which let players view the about sections and config sections of the datapack.
