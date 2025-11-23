@@ -8,9 +8,7 @@ However, if you are using a Linux-based operating system, it is possible to clon
 
 Where `<owner>` is your GitHub username and `<datapack_name>` is your GitHub repository name/datapack name.
 
-This script is designed to work both with GitHub Actions and manual usage, and will safely delete:
-  - Leftover unused folders that are not tracked by Git (src/main/java/com/example and src/main/resources/examplemod).
-  - The .github folder and script file after successful execution.
+This script is designed to work both with GitHub Actions and manual usage, and will safely delete the .github folder and script file after successful execution.
 
 # Features
 This datapack has a few useful features to assist in making the user experience as friendly as possible. There are about and config triggers which let players view the about sections and config sections of the datapack.
