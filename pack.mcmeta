@@ -1,6 +1,7 @@
 {
 	"pack": {
-		"pack_format": 88.0,
-		"description": "Brainage's Template Datapack"
+		"description": "Brainage's Template Datapack",
+		"min_format": 94,
+    	"max_format": 95
 	}
 }
